@@ -6,6 +6,6 @@ build-backend = "pseudo_builder"
 # If you're running a fork and need to download from the
 # upstream release, uncomment this line
 git-url = "https://github.com/hadolint/hadolint"
-version-git-tag = true
+version-cmd = "awk -F'=' '/^version/ {print $2}' hadolint.cabal | tr -d ' '"
 format = "hadolint-{system}-{arch}"
 exec = "mv {} hadolint && chmod +x hadolint"
