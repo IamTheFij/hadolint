@@ -396,8 +396,6 @@ repos:
 
 If you have neither, pre-commit can download the binary from Github. If you hit Github API rate limits. You may set `GITHUB_TOKEN` in your environment for higher limits.
 
-Note: This install method does not yet support Windows.
-
 ```yaml
 ---
 repos:
